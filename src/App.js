@@ -2,7 +2,7 @@ import PersonList from './components/PersonList.js';
 
 function App() {
     return (
-        <div ClassName='App'>
+        <div>
             <PersonList />
         </div>
     );

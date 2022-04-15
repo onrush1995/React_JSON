@@ -20,14 +20,14 @@ export default class PersonList extends React.Component {
                 <main className='deals'>
                     {this.state.persons.map((person) => (
                         <article className='sale-item' key={person.id}>
-                            <h1 className='initialLetter'> {person.name.charAt(0)}</h1>
+                            <h1 className='circle'> {person.name.charAt(0)}</h1>
                             <p>{person.name}</p>
-                            <p> {person.username}</p>
+                            <p> @{person.username}</p>
                             <p>
                                 {' '}
-                                <a href='{person.website}'>{person.website} </a>
+                                <a href='{person.website}'>https://{person.website} </a>
                             </p>
-                            <button style={{ color: 'blue' }}>View Details</button>
+                            <button>View Details</button>
                         </article>
                     ))}
                 </main>
